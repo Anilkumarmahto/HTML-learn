@@ -1,0 +1,33 @@
+*{
+	margin: 0;
+	padding: 0;
+}
+/* # = id */
+#my{
+	color: pink;
+}
+
+/* . = class */
+
+.name{
+	color: yellow;
+}
+
+.backimg{
+	width: 100%;
+	height: 100vh;
+/*	background-color: yellow;  */
+	background-image: url('background.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;  
+	background-attachment: fixed;
+}
+.backimg1{
+	width: 100%;
+	height: 100vh;
+/*	background-color: yellow;  */
+	background-image: url('about.jpg');
+	background-repeat: no-repeat;
+	background-size: 100% 100%;  
+	background-attachment: fixed;
+}

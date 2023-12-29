@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Advance js</title>
+        <script>
+           async function test() {
+             const response = await fetch("json/student_data.json");
+             const students = await response.json();
+
+
+             return students;
+           }
+
+           
+           test().then((res) => {
+                console.log(res);
+           }).catch((error) => {
+                console.log(error);
+           });
+        </script>
+    </head>
+    <body>
+
+    </body>
+</html>

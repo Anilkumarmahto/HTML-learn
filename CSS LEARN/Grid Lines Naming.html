@@ -1,0 +1,87 @@
+<!-- Grid Properties
+        grid-template-rows , grid-template-columns , grid-template-areas , grid-template , 
+		grid-row-gap , grid-column-gap , grid-gap , justify-items , align-items , justify-content,
+		align-content , grid-auto-rows , grid-auto-columns , grid-auto-flow,{Grid Items Position properties = grid-row-start ,
+		grid-row-end , grid-row , grid-column-start , grid-column-end , grid-column , grid-area ,}
+		justify-self , align-self , order 
+		
+	Grid Creating Properties
+	         grid-template-columns
+			 grid-template-rows
+
+    
+	            
+-->
+<html>
+     <head>
+	      <title>Grid Lines Naming</title>
+		  <style>
+		   body{
+               font-family:arial,helvetica;
+			   }
+			h1{
+			   padding: 0 0 0 40px; 
+			}
+           .container{
+		       background:#eee;
+			   width:720px;
+			   margin:45px auto 0;
+			   
+			   display:grid;
+			   grid-template-columns:repeat(3,[col-start] 1fr [col-end]);
+			   grid-template-rows:[header-start]120px [header-end menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px [content-end footer-start] 50px [footer-end];
+			   grid-gap:15px;
+              			   
+		   }
+		   .header{
+		      background:orangered;
+			   grid-row:header-start/header-end ;
+               grid-column:col-start 1/col-end 3;			   
+		   }
+		   .menu{
+		      background:yellowgreen;
+			  grid-row:menu-start/menu-end;
+               grid-column:col-start 1/col-end 3;
+		   }
+		   .box1{
+		      background:mediumpurple;
+		   }
+		   .box2{
+		      background:hotpink;
+		   }
+		   .sidebar{
+		      background:royalblue;
+			  grid-row:box-start/content-end;
+		   }
+		   .content{
+		     background:#7DCEA0;
+			 grid-row:content-start/content-end;
+			 grid-column:col-start 1/col-end 2;
+		   }
+		   .footer{
+		      background:goldenrod;
+			  grid-row:footer-start/footer-end;
+			  grid-column:1/-1;
+			}
+			.items{
+			  color:#fff;
+			  font-size:20px;
+			  font-weight:10px;
+			}
+		  </style>
+	 </head>
+    <body>
+	       <h1>Anil kumar mahto</h1>
+	  		
+            <div class="container">	
+                 <div class="items header">Header</div>
+                 <div class="items menu">Menu</div>
+                 <div class="items box1">Box 1</div>
+                 <div class="items box2">Box 2</div>
+                 <div class="items sidebar">sidebar</div>
+                 <div class="items content">content</div>
+                 <div class="items footer">footer</div>
+				 
+			</div>			
+    </body>
+</html>

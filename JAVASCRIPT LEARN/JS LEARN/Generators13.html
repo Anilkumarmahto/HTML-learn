@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+            let yArray = [yield, yield, yield];
+            console.log(`Result : ${yArray}`);
+        }
+
+        let g = generateit();
+        g.next();
+        g.next(500);
+        g.next(600);
+        g.next(700);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

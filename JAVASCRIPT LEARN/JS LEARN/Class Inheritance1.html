@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance JS</title>
+	<script>
+		
+		class employee{
+			constructor(name){
+				console.log("Constructor : Employee " + name);
+			}
+		}
+
+		class manager extends employee{
+			constructor(name){
+				super();
+				console.log("Constructor : Manager " + name);
+			}
+		}
+
+		let a = new manager("Anil kumar");
+	</script>
+</head>
+<body>
+
+</body>
+</html>

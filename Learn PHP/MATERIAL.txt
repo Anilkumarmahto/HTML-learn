@@ -1,0 +1,120 @@
+* How to write a variable name : 
+    Write way		Wrong way
+.$firstname		.$first name
+.$_firstname		.$99firstname
+.$first_name		.$first%name
+.$first-name
+.$firstName
+.$firstname99
+
+
+*What are Variables ?
+$x = "Hello World"; ------------------> String
+$x = 25; -----------------------------> Integer
+$x = 30.50; --------------------------> Float
+$x = true; ---------------------------> Boolean
+$x = array("HTML","CSS","JS"); -------> Array
+$x = new MyClass(); ------------------> Object
+$x = null; ---------------------------> Null
+
+* Two types of Comment
+.Single Line Comment    => //here is comment, #here is comment
+.Multiple Line Comment  => /*here is comment 
+			      which can be on multiple lines */
+
+* Constant Variables
+.define(name,value,case-insensitive)
+
+*Arithmetic Operators
+Operator		Description
+   +	...............	 Addition
+   -   ...............	Subtraction
+   *	..............	Multiplication
+   **	..............	Exponentiation
+    /   ..............  Division
+   %	..............	Modulus(Remainder)
+   ++ 	..............	Increment Operator
+   --	..............	Decrement Operator
+
+* Comparison Operators 
+Operator	Description			
+==		Equal to 			     $x == $y
+
+=== 		Equal value and equal type	     $x === $y
+
+!=		Not equal			     $x != $y
+
+<>		Not equal			     $x <> $y
+
+!==		Not equal value or not equal type    $x !== $y
+
+>		Greater than			     $x > $y
+
+<		Less than			     $x < $y
+
+>=		Greater than or Equal to	     $x >= $y
+
+<=		Less than or Equal to		      $x <= $y
+
+<=>		Spaceship			      $x <=> $y
+it return -1,0 or 1 respectively less than ,equal to,or greater than
+
+
+* Logical Operators :
+	Operator		Name
+	&&			Logical AND
+
+	||			Logical OR
+
+	!			Logical NOT
+
+	and			Logical AND
+
+	or 			Logical OR
+
+	xor			Logical OR
+
+
+* class 
+   Type of methods
+
+.Constructor 
+              constructor(){
+		console.log("hello");
+		}
+
+.Prototype
+		message(){
+		   console.log("hello")
+		}
+
+.Static
+		static name(){
+		    console.log("hello")
+		}
+
+* Function Syntax:
+	function functionName(){  <------- Function Definition
+		statement
+	}
+	functionName();   <----------   Calling a function
+
+* Function with Parameters syntax:-
+	function functionName(parameter1, parameter2){
+		statement
+	}
+	functionName(argument1,argument2);
+
+
+* Function with return value : 
+	function functionName(parameter1, parameter2){
+		statements
+		return value;
+	}
+	$a = functionName(argument1,argument2);
+
+
+* Foreach Loop Syntax :
+	foreach($array as $value){
+
+	}

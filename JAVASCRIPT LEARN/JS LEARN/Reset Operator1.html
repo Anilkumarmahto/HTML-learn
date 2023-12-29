@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance js</title>
+	<script>
+		function sum(name,course, ...args){
+			console.log(arguments);
+
+			document.write(`Hello ${name} of ${course} : `)
+
+			let sum = 0;
+			for(let i in args){
+				sum += args[i];
+			}
+
+			document.write(sum + "<br>");
+		}
+
+		sum("Anil Kumar","Btech",20,30,40);
+		sum("Bhola Kumar","BA",70,20);
+		sum("Shiv Kumar","Bsc",70,20,40,60,20);
+	//	sum(20,30);
+	</script>
+</head>
+<body>
+
+</body>
+</html>

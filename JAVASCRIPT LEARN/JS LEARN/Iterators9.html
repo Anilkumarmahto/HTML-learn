@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function numberIterator(arr) {
+            var nextNum = 0;
+            return {
+                next() {
+                    return {
+                        value: arr[nextNum++],
+                        done: false
+                    }
+                }
+            }
+        }
+        let numbers = [100, 200, 300];
+
+        let num = numberIterator(numbers);
+        console.log(num.next());
+        console.log(num.next());
+        console.log(num.next());
+        console.log(num.next());
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

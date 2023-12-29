@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+
+            let nextNum = 300;
+            while (true) {
+                yield (nextNum++);
+            }
+        }
+
+        let g = generateit();
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log(g.next().value);
+     //   for (let value of g) {
+     //       console.log(value);
+     //   }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

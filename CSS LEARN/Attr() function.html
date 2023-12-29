@@ -1,0 +1,30 @@
+<!-- 
+           
+-->
+<html>
+     <head>
+	      <title>Attr() function</title>
+		  <style>
+		    body{
+			   font:19px/25px arial;
+			   padding:10px 0 0 20px;
+			}
+			h1{
+			   font-size:32px;
+			   margin-bottom:35px;
+			}
+			p{
+			  font-size:37px;
+			  margin:200px 0 0 50px;
+			}
+			p:hover::after{
+			   content:attr(data-caption);
+			   color:red;
+			}
+		  </style>
+	 </head>
+    <body>
+		  <h1>Anil Kumar Mahto</h1>
+          <p class="test" data-caption="Kumar">Anil</p>		  
+    </body>
+</html>

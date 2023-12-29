@@ -1,0 +1,264 @@
+Three type of variable(comments):Var,Let,Const
+
+How to write a variable name
+Writer way : firstname,first_name,first-name,firstName,firstname99
+Wrong way : first name,99firstname
+
+#Javascript basic events
+.Click(onclick)
+.Double Click(ondblclick)
+.Right Click(oncontextmenu)
+.Mouse Hover(onmouseenter)
+.Mouse Out(onmouseout)
+.Mouse Down(onmousedown)
+.Mouse Up(onmouseup)
+.Key Press(onkeypress)
+.Key Up(onkeyup)
+.Load(onload)
+.Unload(onunload)
+.Resize(onresize)
+.Scroll(onscroll)
+
+
+Javascript Array Methods :
+.sort()
+.reverse()
+.pop()
+.push()
+.shift()
+.unshift()
+.concat()
+.join()
+.slice()
+.splice()
+.isArray()
+.indexOf()
+.lastIndexOf()
+.entries()
+.every()
+.filter()
+.find()
+.findIndex()
+.includes()
+.some()
+.forEach()
+.toString()
+.valueOf()
+.fill()
+
+
+JavaScript String Methods:
+.length
+.toLowerCase()
+.toUpperCase()
+.includes()
+.startsWith()
+.endsWith()
+.search()
+.match()
+.indexOf()
+.lastlndexOf()
+.replace()
+.trim()
+.charAt()
+.charCodeAt()
+.fromCharCode()
+.concat()
+.split()
+.repeat()
+.slice()
+.substr()
+.substring()
+.toString()
+.valueOf()
+
+How to Target DOM(document object method) object
+.Id - document.getElementById(id)
+.Class Name - document.getElementsByClassName(name)
+.Tag Name - document.getElementsByTagName(name)
+
+Other DOM Targeting Methods :
+.document
+.document.all
+.document.head
+.document.title
+.document.body
+.document.images
+.document.anchors
+.document.links
+.document.documentElement
+.document.links
+.document.forms
+.document.doctype
+.document.URL
+.document.baseURI
+.document.domain
+
+DOM Get Methods :
+.innertext
+.innerHTML
+.getAttribute
+.getAttributeNode
+.attributes
+
+DOM Set MEthod:
+.innertext
+.innerHTML
+.setAttribute
+.Attribute
+.removeAttribute
+
+New DOM Targeting Methods:
+.querySelector
+.querySelectorAll
+
+DOM CSS Styling Methods:
+.Style
+.className
+.classList
+
+Assign Events Using the HTML DOM :
+document.getElementById(id).onclick = functionName;
+
+DOM addEventListener() Method :
+document.getElementById(id).addEventListener("click",functionName);
+
+
+UseCapture :
+addEventListener(event,function,useCapture);
+
+DOM removeEventListener() Method :
+element.removeEventListener("ondbclick",functionName);
+
+JavaScript classList Methods :
+.add(class1,class2,....)
+.remove(class1,class2,...)
+.toggle(class)
+.contains(class)
+.item(index)
+.Length
+
+DOM Traversal Methods :
+.parentNode
+.ParentElement
+.Children
+.childnodes
+.firstChild
+.firstElementChild
+.lastChild
+.lastElementChild
+.nextElementSibling
+.nextSibling
+.previousElementSibling
+.previousSibling
+
+
+DOM Create Methods :
+.createElement
+.createTextNode
+.createComment
+
+
+DOM Append Methods :
+.appendChild
+.insertBefore
+.insertAdjecentElement
+.insertAdjecentHTML
+.insertAdjecentText
+
+DOM insertAdjecent Positions : 
+.beforebegin
+.afterbegin
+.beforeend
+.afterend
+
+
+DOM Replace & Remove Methods:
+.replaceChild()
+.removeChild()
+
+DOM isEqualNode() Method :
+.same Node Type
+.same nodeName
+.same NodeValue
+.same childNodes
+.same attributes
+.same attribute values
+
+JavaScript Animation
+.setinterval(functionName,millisecond(1000ms = 1 second))
+.clearinterval
+
+JavaScript One Time Animation
+.setTimeout(functionName,millisecond)
+.clearTimeout()
+
+
+Window Height & Width Method :
+.innerHeight
+.innerWidth
+.outerHeight
+.outerWidth
+
+Window Open & Close Methods :
+window.open(URL,name,specs)
+name = _blank, _parent, _self, _top
+specs = width, Height, Left, Top
+
+
+Window resizeBy & resizeTo Methods:
+resizeBy()
+resizeTo()
+
+Window scrollTo & scrollBy methods:
+scrollTo
+scrollBy
+
+Location Object Properties :
+.hash
+.host
+.hostname
+.href
+.origin
+.pathname
+.port
+.protocol
+.search
+
+Location Object Method:
+.Assign()
+.Reload()
+.Replace()
+
+History Object Properties:
+.length
+
+
+History Object Methods:
+.back()
+.forward()
+.go()
+
+
+
+Javascript Ajax Syntax :
+
+var xhttp = new XMLHttpRequest();
+xhttp.onreadystatechange = function(){
+    if(this.readyState ==4 && this.status ==200){
+         document.getElementByid("demo").innerHTML = this.responseText;  
+}
+};
+xhttp.open("GET", "filename.txt", true);
+xhttp.send();
+
+
+
+Different type of Errors in JavaScript :
+.EvalError
+.RangeError
+.ReferenceError
+.SyntaxError
+.TypeError
+.URIError
+.AggregrateError

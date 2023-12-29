@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>javascript</title>
+    <script>
+      var ary = [
+      ["Anil",23,"Male","Bsc.it"],
+      ["Bhola",18,"Male","Bsc"],
+      ["shiv",17,"Male","Bsc"],
+      ["sarah",17,"Female","B.A"]
+    ];
+    document.write(ary.length);
+    document.write("<table border='1px' cellspacing='0'>");
+    for (var a = 0; a < ary.length; a++) {
+        document.write("<tr>");
+      for (var b = 0; b < ary[a].length; b++) {
+          document.write("<td>" + ary[a][b] + "</td>");
+      }
+      document.write("</tr>");
+    }
+      document.write("</table>");
+    </script>
+  </head>
+  <body>
+
+  </body>
+</html>

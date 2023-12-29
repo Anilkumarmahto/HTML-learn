@@ -1,0 +1,58 @@
+<!-- Animation properties
+       animation-name
+	   animation-duration
+	   animation-timing-function=ease, linear, easy-in, steps-start, starts-end, steps(), cubic-bezier() 
+	   animation-delay
+	   animation-iteration-counter-increment
+	   animation-direction=normal, reverse, alternate, alternate-reverse
+	   animation-fill-mode=none, forwards, backwards, both
+	   animation-play-state
+	   animation
+	   
+	   @keyframes animation-example{
+	       from
+		   to
+	   }
+-->
+<html>
+     <head>
+	      <title>Animation</title>
+		  <style>
+		   body{
+               font-family:arial,helvetica;
+			   background:#eee;
+			   }
+             .card{
+			    width:300px;
+				height:300px;
+				position:absolute;
+				left:50%;
+				top:50%;
+				line-height:300px;
+				margin:-150px;
+				background:white;
+				color:#03446A;
+				text-align:center;
+				font-size:40px;
+				box-shadow:0 0 15px rgba(0,0,0,0,1);
+				animation-name: sample;
+				animation-delay:2s;
+				animation-duration:2s;
+				animation-timing-function:ease;
+				animation-iteration-count:infinite;
+				animation-direction:alternate; 
+				
+				/*animation:sample 2s ease 2s infinite alternate; */
+			 }
+			 @keyframes sample{
+			   0%{border-radius:0%;}
+			   50%{background-color:yellow;}
+				100%{border-radius:50%;background-color:tomato;color:white;}
+			 }
+		  </style>
+	 </head>
+    <body>
+	      <h1 style="margin-bottom:50px;">Anil Kumar mahto</h1>
+         <div class="card">Anil Kumar </div>		 
+    </body>
+</html>

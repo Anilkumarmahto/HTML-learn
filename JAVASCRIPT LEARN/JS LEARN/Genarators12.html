@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+            let result = (yield) * 10;
+            console.log(`Result : ${result}`);
+        }
+
+        let g = generateit();
+        g.next();
+        g.next(500);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

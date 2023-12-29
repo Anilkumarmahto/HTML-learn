@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Avance JS</title>
+	<script>
+		let n = "student";
+
+		var obj = {
+			[n + "name"] : "Anil Kumar",
+			course : "Btech",
+   			'detail show'(){
+   				return `${this.studentname} is student of ${this.course}`
+			}
+		};
+
+		console.log(obj);
+		console.log(obj['detail show']());
+
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance JS</title>
+	<script>
+		let complete = true;
+
+		let prom = new Promise(function(resolve, reject){
+			if(complete){
+					resolve("I am sucessfull.");
+			}else{
+				reject("I am failed.");
+			}
+		});
+
+		console.log(prom);
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

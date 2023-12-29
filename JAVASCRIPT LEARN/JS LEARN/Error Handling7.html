@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+
+        try {
+            blabla;
+        } catch (error) {
+            // console.log('Error has occurred.');
+            if (error instanceof ReferenceError) {
+                console.log('ReferenceError');
+            } else if (error instanceof TypeError) {
+                console.log('TypeError');
+            } else {
+                console.log('Unknown Error');
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

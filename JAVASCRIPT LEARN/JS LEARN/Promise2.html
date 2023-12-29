@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance JS</title>
+	<script>
+		function prom(complete){
+
+			return new Promise(function(resolve, reject){
+				console.log("Fetching data, please wait.")
+			   setTimeout(() =>{
+			   	    if(complete){
+					resolve("I am sucessfull.");
+			      }else{
+				     reject("I am failed.");
+			}
+			   }, 3000)
+		});
+
+		}
+
+		let onfulfilment = (result) => {
+			console.log(result);
+		}
+
+		let onRejection = (error) => {
+			console.log(error);
+		}
+
+		prom(true).then(onfulfilment).catch(onRejection);
+		
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Jquery Learn</title>
+    <style media="screen" type="text/css">
+      body{
+        font-family
+      }
+      #box{
+        background:pink;
+        padding:10px;
+        border:1px solid #000;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Anil kumar : Jquery Mouse Event</h1>
+    <div class="test" id="box">
+      <h2>Test Box</h2>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+    </div>
+    <script src="js/jquery.js"></script>
+    <script>
+        $(document).ready(function(){
+          $("body").keypress(function(){
+            $(this).css("background-color","orange");
+          });
+
+          $("body").keyup(function(){
+            $(this).css("background-color","red");
+          });
+
+          $("body").keydown(function(){
+            $(this).css("background-color","orange");
+          });
+        });
+    </script>
+  </body>
+</html>

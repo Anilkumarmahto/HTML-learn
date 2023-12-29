@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+
+            yield 'yield No.1';
+            yield 'yield No.2';
+            yield 'yield No.3';
+        }
+
+        let g = generateit();
+        for (let value of g) {
+            console.log(value);
+        }
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

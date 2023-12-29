@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+            yield 'PHP';
+            yield 'Node';
+            yield 'Angular';
+            yield 'React';
+        }
+
+        let g = generateit();
+        console.log(g.next().value);
+        console.log(g.next().value);
+        console.log([...g]);
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

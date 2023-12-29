@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance JS</title>
+	<script>
+		
+		class student{
+			constructor(name){
+				this.studentname = name;
+				console.log("constructor function");
+			}
+
+			hello(){
+				console.log("Hello " + this.studentname)
+			}
+		}
+
+		let a = new student("Anil Kumar");
+		
+		a.hello();
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

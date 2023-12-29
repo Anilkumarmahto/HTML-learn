@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance js</title>
+	<script>
+		function sum(name, ...args){
+			console.log(arguments);
+
+			document.write(`Hello ${name} : `)
+
+			let sum = 0;
+			for(let i in args){
+				sum += args[i];
+			}
+
+			document.write(sum);
+		}
+		var arr = [10,20,30];
+
+		sum("Anil Kumar",...arr);
+	
+	</script>
+</head>
+<body>
+
+</body>
+</html>

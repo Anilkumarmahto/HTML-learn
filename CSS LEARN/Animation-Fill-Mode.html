@@ -1,0 +1,49 @@
+<!-- Animation properties
+       animation-name
+	   animation-duration
+	   animation-timing-function=ease, linear, easy-in, steps-start, starts-end, steps(), cubic-bezier() 
+	   animation-delay
+	   animation-iteration-counter-increment
+	   animation-direction=normal, reverse, alternate, alternate-reverse
+	   animation-fill-mode=none, forwards, backwards, both
+	   animation-play-state= paused, running
+	   animation
+	   
+	   @keyframes animation-example{
+	       from
+		   to
+	   }
+-->
+<html>
+     <head>
+	      <title>Animation-fill-mode</title>
+		  <style>
+		   body{
+               font-family:arial,helvetica;
+			   }
+             .box{
+			   width:150px;
+			   height:150px;
+			   background:black;
+			   margin-left:20px;
+			   animation:sample 2s 1s forwards;
+			   animation-play-state:paused;
+			   
+			 /* animation-fill-mode:backwards; */
+			 }
+			 
+			 .box:hover{
+			    animation-play-state:running;
+			 }
+			 @keyframes sample{
+			   0%{background:yellow; width:250px;}
+			   50%{background:Aqua; width:350px;}
+			   100%{background:red; width:450px;}
+			 }
+		  </style>
+	 </head>
+    <body>
+	      <h1 style="margin-bottom:50px;">Anil Kumar mahto</h1>
+         <div class="box"></div>		 
+    </body>
+</html>

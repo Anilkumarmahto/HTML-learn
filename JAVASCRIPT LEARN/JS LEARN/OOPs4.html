@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Advance JS</title>
+	<script>
+		
+		class student{
+			constructor(name, age){
+				this.studentname = name;
+				this.studentage = age;
+				console.log("constructor function");
+			}
+
+			hello(){
+				console.log("Hello " + this.studentname + " Your age is " + this.studentage);
+			}
+		}
+
+		let a = new student("Anil Kumar",25);
+		
+		a.hello();
+		
+	</script>
+</head>
+<body>
+
+</body>
+</html>

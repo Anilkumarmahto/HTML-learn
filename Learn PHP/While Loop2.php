@@ -1,0 +1,12 @@
+<?php
+
+    $a = 1;
+
+    while($a <= 20){
+      echo $a . ") Hello Anil Kumar <br>";
+      $a++;
+    }
+
+
+
+ ?>

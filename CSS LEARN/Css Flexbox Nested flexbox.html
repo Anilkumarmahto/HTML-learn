@@ -1,0 +1,136 @@
+<!-- Css Flexbox Properties
+         flex-direction
+		 flex-wrap
+		 flex-grow
+		 flex-shrink
+		 flex-basis
+		 flex
+		 justify-content
+		 align-content
+		 align-items
+		 align-self
+		 order
+      
+	  Css Flex-direction value
+	         row
+			 row-reverse
+			 column
+			 column-reverse
+			 
+	  Css Flex-wrap value
+	         nowrap
+			 wrap
+			 wrap-reverse
+			 
+	  justify-content value
+	         flex-start
+			 flex-end
+			 center
+			 space-around
+			 space-between
+			 space-evenly
+			 
+	  Align-items value
+	         flex-start
+			 flex-end
+			 center
+			 stretch
+			 baseline
+			 
+	  Align-content values
+	         flex-start
+			 flex-end
+			 center
+			 stretch
+			 space-around
+			 space-between
+			 space-evenly
+			 
+	  Align-self values
+	         auto
+			 flex-start
+			 flex-end
+			 center
+			 stretch
+			 baseline
+-->
+<html>
+     <head>
+	      <title>Css flexbox Align-self</title>
+		  <style>
+		   body{
+               font-family:arial,helvetica;
+			   }
+			h1{
+			   padding: 0 0 0 40px; 
+			}
+           .container{
+		       background:#eee;
+			   margin:50px;
+           	   padding:0px;
+               border:3px solid #000;
+			   
+              
+               display:flex;
+               flex-direction:column;
+		   }
+		   .items{
+			  color:#fff;
+			  font-size:20px;
+			  font-weight:bold;
+			  text-align:center;
+			  padding:0px;
+			  height:100px;
+			  
+			}
+		   .item1{
+		      background:orangered;
+		   }
+		   .item2{
+		      background:yellowgreen;
+              display:flex;			  
+		   }
+		   .item2 > .subitem{
+		      background:wheat;
+			  color:mediumpurple;
+			  flex-grow:1;
+			  margin:5px;
+		   }
+		   .item3{
+		      background:mediumpurple;
+            			  
+		   }
+		   .item4{
+		      background:hotpink;
+
+		   }
+		   .item5{
+		      background:royalblue;
+		   }
+		   .item6{
+		     background:yellow;
+		   }
+		   .item7{
+		      background:goldenrod;
+			}
+			.item8{
+		      background:aqua;
+			}
+			
+		  </style>
+	 </head>
+    <body>
+	       <h1>Anil kumar mahto</h1>
+	  		
+            <div class="container">	
+                 <div class="items item1">One </div>
+                 <div class="items item2"> 
+				     <div class="subitem subitem1">A</div>
+				     <div class="subitem subitem2">B</div>
+				     <div class="subitem subitem3">C</div>
+				 </div>
+                 <div class="items item3">Three </div>
+                
+			</div>			
+    </body>
+</html>

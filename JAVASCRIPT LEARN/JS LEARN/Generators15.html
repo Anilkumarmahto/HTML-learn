@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Advance JS</title>
+    <script>
+        function* generateit() {
+            yield 55;
+            yield ['Node', 'Angular', 'React'];
+        }
+
+        let g = generateit();
+        console.log(g.next());
+        console.log(g.next());
+
+
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>
